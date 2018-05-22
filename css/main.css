@@ -14,4 +14,19 @@
   width: 100%;
   background-color: #7a72db; }
 
+#header-home {
+  margin-bottom: -75px;
+  background-color: #a2bacb; }
+
+.portrait {
+  width: 150px;
+  margin: 0 auto; }
+  .portrait img {
+    border-radius: 50%;
+    width: 100%; }
+
+#nav-home {
+  padding-top: 75px;
+  background-color: #cd6d6d; }
+
 /*# sourceMappingURL=main.css.map */
