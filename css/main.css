@@ -26,17 +26,28 @@ li {
   background-color: #7a72db; }
 
 #header-home {
-  margin-bottom: -75px;
+  width: 100%;
+  height: 25vh;
   background-color: #a2bacb; }
+  #header-home h1 {
+    padding: 5px 0; }
+  #header-home h1, #header-home h2 {
+    text-align: center; }
 
 .portrait {
   width: 150px;
-  margin: 0 auto; }
+  margin: 0 auto;
+  position: absolute;
+  top: 25%;
+  left: 50%;
+  transform: translate(-50%, -50%); }
   .portrait img {
     border-radius: 50%;
     width: 100%; }
 
 #nav-home {
+  width: 100%;
+  height: 75vh;
   padding-top: 75px;
   background-color: #cd6d6d; }
 
