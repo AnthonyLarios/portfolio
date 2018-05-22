@@ -70,11 +70,12 @@ li {
   background-color: #ECE2D9; }
   #nav-home li {
     width: 75%;
-    border-radius: 1%;
+    border-radius: 100px;
     margin: 26.5px auto; }
     #nav-home li a {
       padding: 15.9px 50px;
-      font-size: 1.5em; }
+      font-size: 1.5em;
+      font-weight: bold; }
   @media (min-height: 630px) {
     #nav-home {
       height: 75vh; } }
