@@ -59,6 +59,8 @@ body {
   height: 472.5px;
   padding-top: 75px;
   background-color: #ECE2D9; }
+  #nav-home ul {
+    height: 100%; }
   @media (min-height: 630px) {
     #nav-home {
       height: 75vh; } }
