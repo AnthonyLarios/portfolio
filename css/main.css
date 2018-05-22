@@ -25,7 +25,7 @@ li {
   background-color: #24A5A0; }
   li a {
     text-decoration: none;
-    color: #ECE2D9;
+    color: #fff;
     display: block; }
 
 #container {
@@ -44,7 +44,7 @@ li {
     padding: 5px 0; }
   #header-home h1, #header-home h2 {
     text-align: center;
-    color: #ECE2D9; }
+    color: #fff; }
   @media (min-height: 630px) {
     #header-home {
       height: 25vh; } }
