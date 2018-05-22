@@ -30,28 +30,37 @@ body {
 
 #header-home {
   width: 100%;
-  height: 25vh;
-  background-color: #a2bacb; }
+  min-height: 157.5px;
+  background-color: #24A5A0; }
   #header-home h1 {
     padding: 5px 0; }
   #header-home h1, #header-home h2 {
     text-align: center; }
+  @media (min-height: 630px) {
+    #header-home {
+      height: 25vh; } }
 
 .portrait {
   width: 150px;
   margin: 0 auto;
   position: absolute;
-  top: 25%;
+  top: 157.5px;
   left: 50%;
   transform: translate(-50%, -50%); }
   .portrait img {
     border-radius: 50%;
     width: 100%; }
+  @media (min-height: 630px) {
+    .portrait {
+      top: 25%; } }
 
 #nav-home {
   width: 100%;
-  height: 75vh;
+  height: 472.5px;
   padding-top: 75px;
-  background-color: #cd6d6d; }
+  background-color: #ECE2D9; }
+  @media (min-height: 630px) {
+    #nav-home {
+      height: 75vh; } }
 
 /*# sourceMappingURL=main.css.map */
