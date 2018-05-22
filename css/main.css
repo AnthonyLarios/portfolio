@@ -20,6 +20,9 @@ li {
 body {
   min-height: 630px; }
 
+li {
+  text-align: center; }
+
 #container {
   max-width: 960px;
   background-color: #e8e8e8; }
