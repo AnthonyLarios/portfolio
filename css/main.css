@@ -1,13 +1,17 @@
-#container {
-    max-width: 960px;
-    background-color: #e8e8e8;
-}
-
-.stuff {
-    width: 100%;
-    background-color: #7a72db;
-}
+.clearfix {
+  content: "";
+  clear: both;
+  display: table; }
 
 .hide {
-    display: none;
-}
+  display: none; }
+
+#container {
+  max-width: 960px;
+  background-color: #e8e8e8; }
+
+.stuff {
+  width: 100%;
+  background-color: #7a72db; }
+
+/*# sourceMappingURL=main.css.map */
