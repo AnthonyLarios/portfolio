@@ -6,6 +6,17 @@
 .hide {
   display: none; }
 
+body,
+header, nav, main, section, article, aside, footer,
+div, h1, h2, h3, p, ul, li {
+  padding: 0;
+  margin: 0;
+  display: block;
+  box-sizing: border-box; }
+
+li {
+  list-style: none; }
+
 #container {
   max-width: 960px;
   background-color: #e8e8e8; }
