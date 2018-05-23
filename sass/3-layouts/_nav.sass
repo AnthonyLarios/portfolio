@@ -15,4 +15,17 @@
             font-weight: bold
     
     @media (min-height: 630px)
+        position: relative
+        z-index: -1
         height: 75vh
+        
+        ul
+            position: absolute
+            left: 50%
+            top: calc(50% + 35px)
+            transform: translate(-50%, -50%)
+            width: 100%
+        
+        li
+            margin-top: 4vh
+            margin-bottom: 4vh
