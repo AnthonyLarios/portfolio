@@ -48,7 +48,8 @@ li {
   @media (min-height: 630px) {
     #header-home {
       height: 25vh;
-      position: relative; } }
+      position: relative;
+      z-index: 1; } }
 
 @media (min-height: 630px) {
   #name-title {
@@ -86,7 +87,6 @@ li {
   @media (min-height: 630px) {
     #nav-home {
       position: relative;
-      z-index: -1;
       height: 75vh; }
       #nav-home ul {
         position: absolute;
