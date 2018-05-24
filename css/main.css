@@ -112,7 +112,7 @@ li {
       transition: letter-spacing 0.3s linear; }
       #nav-home li a:hover {
         color: #ECE2D9;
-        letter-spacing: 3px;
+        letter-spacing: 2px;
         text-shadow: 0 1px #000; }
   @media (min-height: 630px) {
     #nav-home {
