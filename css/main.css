@@ -28,8 +28,18 @@ li {
     color: #fff;
     display: block; }
 
-#container {
+#container-home, #container {
   width: 100%; }
+
+@media (min-width: 1000px) {
+  #container-home {
+    height: 80%;
+    width: 80%;
+    margin: 10%; } }
+
+@media (min-width: 500px) {
+  #conatiner {
+    margin-top: 10%; } }
 
 #header-home {
   width: 100%;
@@ -45,6 +55,9 @@ li {
       height: 25vh;
       position: relative;
       z-index: 1; } }
+  @media (min-width: 1000px) {
+    #header-home {
+      height: 25%; } }
 
 @media (min-height: 630px) {
   #name-title {
@@ -92,5 +105,8 @@ li {
       #nav-home li {
         margin-top: 4vh;
         margin-bottom: 4vh; } }
+  @media (min-width: 1000px) {
+    #nav-home {
+      height: calc(55vh - 75px); } }
 
 /*# sourceMappingURL=main.css.map */
