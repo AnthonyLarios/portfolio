@@ -19,6 +19,9 @@ li {
 
 body {
   min-height: 630px; }
+  @media (min-height: 630px) {
+    body {
+      height: 100vh; } }
 
 li {
   text-align: center;
@@ -31,11 +34,14 @@ li {
 #container-home, #container {
   width: 100%; }
 
-@media (min-width: 1000px) {
+@media (min-width: 1000px) and (min-height: 630px) {
   #container-home {
-    height: 80%;
-    width: 80%;
-    margin: 10%; } }
+    position: absolute;
+    top: 100px;
+    left: 100px;
+    height: calc(100% - 200px);
+    width: calc(100% - 200px);
+    overflow: hidden; } }
 
 @media (min-width: 500px) {
   #conatiner {
@@ -57,6 +63,7 @@ li {
       z-index: 1; } }
   @media (min-width: 1000px) {
     #header-home {
+      position: relative;
       height: 25%; } }
 
 @media (min-height: 630px) {
@@ -76,6 +83,9 @@ li {
     border-radius: 50%;
     width: 100%; }
   @media (min-height: 630px) {
+    #portrait {
+      top: 100%; } }
+  @media (min-width: 1000px) {
     #portrait {
       top: 100%; } }
 
@@ -105,8 +115,26 @@ li {
       #nav-home li {
         margin-top: 4vh;
         margin-bottom: 4vh; } }
-  @media (min-width: 1000px) {
+  @media (min-width: 1000px) and (min-height: 630px) {
     #nav-home {
-      height: calc(55vh - 75px); } }
+      height: 75%; }
+      #nav-home li {
+        width: 50%;
+        border-radius: 0;
+        margin: 0;
+        display: inline-block;
+        float: left;
+        transition: background-color 0.3s linear; }
+        #nav-home li:hover {
+          background-color: #256BB5; }
+        #nav-home li a {
+          padding: 5vh 50px;
+          font-size: 1.5em;
+          font-weight: bold;
+          transition: color 0.3s linear;
+          transition: letter-spacing 0.3s linear; }
+          #nav-home li a:hover {
+            color: #ECE2D9;
+            letter-spacing: 3px; } }
 
 /*# sourceMappingURL=main.css.map */

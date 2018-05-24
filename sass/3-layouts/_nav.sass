@@ -29,5 +29,27 @@
             margin-top: 4vh
             margin-bottom: 4vh
             
-    @media (min-width: 1000px)
-        height: calc(55vh - 75px)
+    @media (min-width: 1000px) and (min-height: 630px)
+        height: 75%
+        
+        li
+            width: 50%
+            border-radius: 0
+            margin: 0
+            display: inline-block
+            float: left
+            transition: background-color 0.3s linear
+            
+            &:hover
+                background-color: #256BB5
+
+            a
+                padding: 5vh 50px
+                font-size: 1.5em
+                font-weight: bold
+                transition: color 0.3s linear
+                transition: letter-spacing 0.3s linear
+                
+                &:hover
+                    color: #ECE2D9
+                    letter-spacing: 3px
