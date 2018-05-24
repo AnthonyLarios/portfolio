@@ -52,6 +52,15 @@ li {
   #header-home h1, #header-home h2 {
     text-align: center;
     color: #fff; }
+    @media (min-height: 630px) and (min-width: 1000px) {
+      #header-home h1, #header-home h2 {
+        display: inline-block;
+        width: 50%;
+        font-size: 2.5em;
+        margin-top: 3vh; } }
+  @media (min-height: 630px) and (min-width: 1000px) {
+    #header-home h2 {
+      float: right; } }
   @media (min-height: 630px) {
     #header-home {
       height: 25vh;
@@ -67,6 +76,9 @@ li {
     position: absolute;
     width: 100%;
     top: calc(25% - 35px); } }
+@media (min-height: 1000px) {
+  #name-title {
+    margin-top: 5vh; } }
 
 #portrait {
   width: 150px;
