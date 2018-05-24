@@ -17,6 +17,9 @@ li {
 .hide {
   display: none; }
 
+.shadow {
+  text-shadow: 0 1px #000; }
+
 body {
   min-height: 630px; }
   @media (min-height: 630px) {
@@ -97,11 +100,20 @@ li {
   #nav-home li {
     width: 75%;
     border-radius: 100px;
-    margin: 26.5px auto; }
+    margin: 26.5px auto;
+    transition: background-color 0.3s linear; }
+    #nav-home li:hover {
+      background-color: #256BB5; }
     #nav-home li a {
       padding: 15.9px 50px;
       font-size: 1.5em;
-      font-weight: bold; }
+      font-weight: bold;
+      transition: color 0.3s linear;
+      transition: letter-spacing 0.3s linear; }
+      #nav-home li a:hover {
+        color: #ECE2D9;
+        letter-spacing: 3px;
+        text-shadow: 0 1px #000; }
   @media (min-height: 630px) {
     #nav-home {
       position: relative;
@@ -123,18 +135,10 @@ li {
         border-radius: 0;
         margin: 0;
         display: inline-block;
-        float: left;
-        transition: background-color 0.3s linear; }
-        #nav-home li:hover {
-          background-color: #256BB5; }
+        float: left; }
         #nav-home li a {
           padding: 5vh 50px;
           font-size: 1.5em;
-          font-weight: bold;
-          transition: color 0.3s linear;
-          transition: letter-spacing 0.3s linear; }
-          #nav-home li a:hover {
-            color: #ECE2D9;
-            letter-spacing: 3px; } }
+          font-weight: bold; } }
 
 /*# sourceMappingURL=main.css.map */

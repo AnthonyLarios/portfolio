@@ -8,11 +8,22 @@
         width: 75%
         border-radius: 100px
         margin: (((3 * 630px / 4) - 75px) / 15) auto
+        transition: background-color 0.3s linear
+            
+        &:hover
+            background-color: #256BB5
         
         a
             padding: (((3 * 630px / 4) - 75px) / 25) 50px
             font-size: 1.5em
             font-weight: bold
+            transition: color 0.3s linear
+            transition: letter-spacing 0.3s linear
+            
+            &:hover
+                color: #ECE2D9
+                letter-spacing: 3px
+                text-shadow: 0 1px #000
     
     @media (min-height: 630px)
         position: relative
@@ -38,18 +49,8 @@
             margin: 0
             display: inline-block
             float: left
-            transition: background-color 0.3s linear
-            
-            &:hover
-                background-color: #256BB5
 
             a
                 padding: 5vh 50px
                 font-size: 1.5em
                 font-weight: bold
-                transition: color 0.3s linear
-                transition: letter-spacing 0.3s linear
-                
-                &:hover
-                    color: #ECE2D9
-                    letter-spacing: 3px
