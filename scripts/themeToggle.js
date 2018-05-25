@@ -10,6 +10,7 @@ function init() {
     toggle.addEventListener("click", function() {
         darkenElements = document.getElementsByClassName("light");
         lightenElements = document.getElementsByClassName("dark");
+        var image = toggle.getAttribute("src");
         
         if (darkenElements.length > 0) {
             darkTheme(darkenElements);
@@ -18,6 +19,14 @@ function init() {
             lightTheme(lightenElements);
             setCookie("theme=light");
         }
+        
+        if (image.indexOf("night") > -1) {
+            image = image.replace("night", "day");
+        } else if (image.indexOf("day") > -1) {
+            image = image.replace("day", "night");
+        }
+        
+        toggle.setAttribute("src", image);
     });
 }
 
