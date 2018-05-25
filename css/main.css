@@ -24,7 +24,7 @@ body {
   min-height: 630px; }
   @media (min-height: 630px) {
     body {
-      height: 100vh; } }
+      height: 100%; } }
 
 li {
   text-align: center;
@@ -145,5 +145,15 @@ li {
           padding: 5vh 50px;
           font-size: 1.5em;
           font-weight: bold; } }
+
+#themeImage {
+  width: 50px;
+  height: 50px;
+  position: fixed;
+  top: 100%;
+  left: 100%;
+  transform: translate(-100%, -100%); }
+  #themeImage img {
+    width: 100%; }
 
 /*# sourceMappingURL=main.css.map */
