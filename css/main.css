@@ -28,7 +28,7 @@ body {
 
 li {
   text-align: center;
-  background-color: #24A5A0; }
+  /*background-color: #24A5A0 */ }
   li a {
     text-decoration: none;
     color: #fff;
@@ -46,7 +46,7 @@ li {
 #header-home {
   width: 100%;
   min-height: 157.5px;
-  background-color: #24A5A0; }
+  /*background-color: #24A5A0 */ }
   #header-home h1 {
     padding: 5px 0; }
   #header-home h1, #header-home h2 {
@@ -101,7 +101,7 @@ li {
   width: 100%;
   height: 472.5px;
   padding-top: 75px;
-  background-color: #ECE2D9; }
+  /*background-color: #ECE2D9 */ }
   #nav-home li {
     width: 75%;
     border-radius: 100px;
@@ -155,5 +155,20 @@ li {
   transform: translate(-100%, -100%); }
   #themeImage img {
     width: 100%; }
+
+.light, .dark {
+  transition: background-color 0.3s linear; }
+
+.light.primary {
+  background-color: #24A5A0; }
+
+.light.secondary {
+  background-color: #ECE2D9; }
+
+.dark.primary {
+  background-color: #444; }
+
+.dark.secondary {
+  background-color: #aaa; }
 
 /*# sourceMappingURL=main.css.map */
