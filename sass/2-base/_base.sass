@@ -12,3 +12,19 @@ li
         text-decoration: none
         color: #fff
         display: block
+        
+section
+    min-height: (3 * 630px / 4)
+    
+    @media (min-height: 630px)
+        min-height: 75vh
+    
+    @media (min-width: 1000px) and (min-height: 630px)
+        height: calc(3 * (100vh - 200px) / 4)
+    
+    p
+        color: #333
+        padding: 10px 5%
+
+        @media (min-width: 1000px) and (min-height: 630px)
+            font-size: 1.25em

@@ -34,6 +34,21 @@ li {
     color: #fff;
     display: block; }
 
+section {
+  min-height: 472.5px; }
+  @media (min-height: 630px) {
+    section {
+      min-height: 75vh; } }
+  @media (min-width: 1000px) and (min-height: 630px) {
+    section {
+      height: calc(3 * (100vh - 200px) / 4); } }
+  section p {
+    color: #333;
+    padding: 10px 5%; }
+    @media (min-width: 1000px) and (min-height: 630px) {
+      section p {
+        font-size: 1.25em; } }
+
 @media (min-width: 1000px) and (min-height: 630px) {
   #container {
     position: absolute;
@@ -81,13 +96,18 @@ li {
     margin-top: 5vh; } }
 
 #header {
-  height: 25vh;
+  min-height: 157.5px;
   display: table;
   width: 100%; }
   #header div {
     display: table-cell;
     text-align: center;
     vertical-align: middle; }
+  #header h1 {
+    color: #FFF; }
+  @media (min-height: 630px) {
+    #header {
+      height: 25vh; } }
 
 #portrait {
   width: 150px;
