@@ -80,6 +80,15 @@ li {
   #name-title {
     margin-top: 5vh; } }
 
+#header {
+  height: 25vh;
+  display: table;
+  width: 100%; }
+  #header div {
+    display: table-cell;
+    text-align: center;
+    vertical-align: middle; }
+
 #portrait {
   width: 150px;
   margin: 0 auto;
@@ -145,6 +154,15 @@ li {
           padding: 5vh 50px;
           font-size: 1.5em;
           font-weight: bold; } }
+
+#nav {
+  width: 100%;
+  height: 50vh;
+  position: absolute;
+  top: 50%;
+  left: 100%;
+  transform: translate(0, -50%);
+  display: none; }
 
 #themeImage {
   width: 50px;
