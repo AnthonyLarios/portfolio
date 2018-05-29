@@ -163,6 +163,30 @@ section {
     #menuImage {
       display: none; } }
 
+.image-flex {
+  display: flex;
+  flex-wrap: wrap; }
+
+.thumbnail {
+  display: block;
+  height: 150px;
+  width: 150px;
+  border-radius: 50%;
+  margin: 0 auto;
+  line-height: 150px;
+  text-align: center;
+  color: #000000;
+  background-color: #FFFFFF;
+  text-decoration: none;
+  font-size: 1.25em;
+  transition: border-radius 0.3s linear; }
+  .thumbnail:hover {
+    border-radius: 0; }
+
+.thumbnail-div {
+  display: inline-block;
+  margin: 20px auto 0; }
+
 #nav-home {
   width: 100%;
   height: 472.5px;
