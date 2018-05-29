@@ -230,7 +230,11 @@ form .button {
   padding-top: 20px; }
   #skills li {
     font-size: 1.25em;
-    margin-bottom: 10px; }
+    margin-bottom: 10px;
+    opacity: 0;
+    transition: opacity 1s linear; }
+    #skills li.show {
+      opacity: 1; }
 
 #nav-home {
   width: 100%;
