@@ -63,6 +63,10 @@ section {
     height: calc(100% - 200px);
     width: calc(100% - 200px);
     overflow: hidden; } }
+@media (min-width: 1600px) and (min-height: 630px) {
+  #container {
+    left: 15%;
+    width: 70%; } }
 
 #container.blur {
   opacity: 0.25; }
@@ -146,9 +150,8 @@ section {
     cursor: pointer; }
 
 #themeImage {
-  top: 100%;
-  left: 100%;
-  transform: translate(-100%, -100%); }
+  bottom: 0;
+  right: 0; }
 
 #menuImage {
   top: 0%;
@@ -258,6 +261,10 @@ section {
           transition: letter-spacing 0.3s linear; }
           #nav li a:hover {
             text-shadow: 0 1px #000; } }
+  @media (min-width: 1600px) and (min-height: 630px) {
+    #nav {
+      left: 15%;
+      width: 70%; } }
 
 #exit {
   font-size: 1.5em;
