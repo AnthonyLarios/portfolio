@@ -12,7 +12,7 @@ form
         float: left
         margin-bottom: 10px
 
-        @media (min-height: 630px) and (min-width: 1000px)
+        @media #{$desktop}
             width: 50%
     
     input, textarea
@@ -25,7 +25,7 @@ form
         margin: 0 auto 10px
         resize: none
         
-        @media (min-height: 630px) and (min-width: 1000px)
+        @media #{$desktop}
             height: 100px
     
     div
@@ -41,5 +41,5 @@ form
         transition: background-color 0.3s linear
 
         &:hover
-            background-color: #256BB5
+            background-color: $highlight
         

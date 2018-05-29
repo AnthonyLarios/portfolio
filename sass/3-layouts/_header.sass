@@ -1,7 +1,6 @@
 #header-home
     width: 100%
-    min-height: (630px / 4)
-    /*background-color: #24A5A0*/
+    min-height: ($height / 4)
     
     h1
         padding: 5px 0
@@ -10,35 +9,35 @@
         text-align: center
         color: #fff
         
-        @media (min-height: 630px) and (min-width: 1000px)
+        @media #{$desktop}
             display: inline-block
             width: 50%
             font-size: 2.5em
             margin-top: 3vh
     h2
-        @media (min-height: 630px) and (min-width: 1000px)
+        @media #{$desktop}
             float: right
         
-    @media (min-height: 630px)
+    @media #{$desktopHeight}
         height: 25vh
         position: relative
         z-index: 1
         
-    @media (min-width: 1000px)
+    @media #{$desktopWidth}
         position: relative
         height: 25%
         
 #name-title
-    @media (min-height: 630px)
+    @media #{$desktopHeight}
         position: absolute
         width: 100%
         top: calc(25% - 35px)
         
-    @media (min-height: 1000px)
+    @media #{$desktopWidth}
         margin-top: 5vh
         
 #header
-    height: (630px / 4)
+    height: ($height / 4)
     display: table
     width: 100%
         
@@ -51,5 +50,5 @@
         font-size: 2.5em
         color: #FFF
         
-    @media (min-height: 630px)
+    @media #{$desktopHeight}
         height: 25vh

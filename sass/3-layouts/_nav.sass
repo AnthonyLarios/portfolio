@@ -1,20 +1,19 @@
 #nav-home
     width: 100%
-    height: (3 * 630px / 4)
+    height: (3 * $height / 4)
     padding-top: 75px
-    /*background-color: #ECE2D9*/
         
     li
         width: 75%
         border-radius: 100px
-        margin: (((3 * 630px / 4) - 75px) / 15) auto
+        margin: (((3 * $height / 4) - 75px) / 15) auto
         transition: background-color 0.3s linear
             
         &:hover
-            background-color: #256BB5
+            background-color: $highlight
         
         a
-            padding: (((3 * 630px / 4) - 75px) / 25) 50px
+            padding: (((3 * $height / 4) - 75px) / 25) 50px
             font-size: 1.5em
             font-weight: bold
             transition: color 0.3s linear
@@ -25,7 +24,7 @@
                 letter-spacing: 2px
                 text-shadow: 0 1px #000
     
-    @media (min-height: 630px)
+    @media #{$desktopHeight}
         position: relative
         height: 75vh
         
@@ -40,7 +39,7 @@
             margin-top: 4vh
             margin-bottom: 4vh
             
-    @media (min-width: 1000px) and (min-height: 630px)
+    @media #{$desktop}
         height: 75%
         
         li
@@ -61,10 +60,9 @@
     top: 50%
     left: 100%
     
-    @media (max-height: 630px), (max-width: 1000px)
+    @media #{$desktopHeight}, #{$desktopWidth}
         transform: translate(0, -50%)
         display: none
-        visibility: hidden
 
         &.show
             display: block
@@ -81,10 +79,10 @@
             transition: background-color 0.3s linear
 
             &:hover
-                background-color: #256BB5
+                background-color: $highlight
 
             a
-                padding: (((3 * 630px / 4) - 75px) / 25) 50px
+                padding: (((3 * $height / 4) - 75px) / 25) 50px
                 font-size: 1.5em
                 font-weight: bold
                 transition: color 0.3s linear
@@ -95,7 +93,7 @@
                     letter-spacing: 2px
                     text-shadow: 0 1px #000
         
-    @media (min-height: 630px) and (min-width: 1000px)
+    @media #{$desktop}
         width: calc(100% - 200px)
         top: 100px
         left: 100px
@@ -107,7 +105,7 @@
             transition: background-color 0.3s linear
 
             &:hover
-                background-color: #256BB5
+                background-color: $highlight
 
             a
                 font-size: 1.25em
@@ -118,7 +116,7 @@
                 &:hover
                     text-shadow: 0 1px #000
         
-    @media (min-width: 1600px) and (min-height: 630px)
+    @media (min-width: 1600px) and #{$desktopHeight}
         left: 15%
         width: 70%
     
@@ -132,5 +130,5 @@
     &:hover
         cursor: pointer
     
-    @media (min-height: 630px) and (min-width: 1000px)
+    @media #{$desktop}
         display: none

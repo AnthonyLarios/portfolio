@@ -2,12 +2,11 @@ body
     min-height: 630px
     font-family: "Anonymous Pro", monospace
     
-    @media (min-height: 630px)
+    @media #{$desktopHeight}
         height: 100%
     
 li
     text-align: center
-    /*background-color: #24A5A0*/
     
     a
         text-decoration: none
@@ -20,7 +19,7 @@ section
     @media (min-height: 630px)
         min-height: 75vh
     
-    @media (min-width: 1000px) and (min-height: 630px)
+    @media #{$desktop}
         height: calc(3 * (100vh - 200px) / 4)
     
     p
@@ -28,11 +27,11 @@ section
         padding: 15px 25px 0
         
 
-        @media (min-width: 800px) and (min-height: 630px)
+        @media (min-width: 800px) and #{$desktopHeight}
             font-size: 1.1em
             padding: 25px 5% 0
             
-        @media (min-width: 1600px) and (min-height: 630px)
+        @media (min-width: 1600px) and #{$desktopHeight}
             font-size: 1.25em
 
     &.light p
