@@ -130,15 +130,23 @@ section {
     #portrait {
       top: 100%; } }
 
-#themeImage {
+#themeImage, #menuImage {
   width: 50px;
   height: 50px;
-  position: fixed;
+  position: fixed; }
+  #themeImage img, #menuImage img {
+    width: 100%; }
+  #themeImage:hover, #menuImage:hover {
+    cursor: pointer; }
+
+#themeImage {
   top: 100%;
   left: 100%;
   transform: translate(-100%, -100%); }
-  #themeImage img {
-    width: 100%; }
+
+#menuImage {
+  top: 0%;
+  right: 0%; }
 
 #nav-home {
   width: 100%;
