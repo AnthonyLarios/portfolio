@@ -36,7 +36,7 @@
         </header>
         
         <section class="light secondary">
-            <form>
+            <form id="contactForm" action="mailto:lariosanthony52@gmail.com" method="post" enctype="text/plain">
                 <fieldset>
                     <legend><h2>Contact Information</h2></legend>
                     <ul>
@@ -53,8 +53,10 @@
                     <textarea name="message" id="message" cols="30" rows="10"></textarea>
                 </fieldset>
                 
-                <input id="reset" value="reset" class="button" type="reset">
-                <input id="submit" value="submit" class="button" type="submit">
+                <div>
+                    <input id="reset" value="Reset" class="button light primary" type="reset">
+                    <input id="submit" value="Submit" class="button light primary" type="submit">
+                </div>
             </form>
         </section>
     </div>
