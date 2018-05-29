@@ -21,7 +21,8 @@ li {
   text-shadow: 0 1px #000; }
 
 body {
-  min-height: 630px; }
+  min-height: 630px;
+  font-family: "Anonymous Pro", monospace; }
   @media (min-height: 630px) {
     body {
       height: 100%; } }
@@ -43,6 +44,7 @@ section {
     section {
       height: calc(3 * (100vh - 200px) / 4); } }
   section p {
+    font-family: Georgia, serif;
     padding: 10px 5%; }
     @media (min-width: 1000px) and (min-height: 630px) {
       section p {
@@ -61,6 +63,9 @@ section {
     height: calc(100% - 200px);
     width: calc(100% - 200px);
     overflow: hidden; } }
+
+#container.blur {
+  opacity: 0.25; }
 
 #header-home {
   width: 100%;
@@ -108,6 +113,7 @@ section {
     text-align: center;
     vertical-align: middle; }
   #header h1 {
+    font-size: 2.5em;
     color: #FFF; }
   @media (min-height: 630px) {
     #header {
@@ -147,6 +153,9 @@ section {
 #menuImage {
   top: 0%;
   right: 0%; }
+  @media (min-height: 630px) and (min-width: 1000px) {
+    #menuImage {
+      display: none; } }
 
 #nav-home {
   width: 100%;
@@ -199,12 +208,67 @@ section {
 
 #nav {
   width: 100%;
-  height: 50vh;
   position: absolute;
   top: 50%;
-  left: 100%;
-  transform: translate(0, -50%);
-  display: none; }
+  left: 100%; }
+  @media (max-height: 630px), (max-width: 1000px) {
+    #nav {
+      transform: translate(0, -50%);
+      display: none;
+      visibility: hidden; }
+      #nav.show {
+        display: block;
+        visibility: visible;
+        transform: translate(-50%, -50%);
+        left: 50%;
+        z-index: 1; }
+      #nav ul {
+        clear: both;
+        padding-bottom: 40px; }
+      #nav li {
+        transition: background-color 0.3s linear; }
+        #nav li:hover {
+          background-color: #256BB5; }
+        #nav li a {
+          padding: 15.9px 50px;
+          font-size: 1.5em;
+          font-weight: bold;
+          transition: color 0.3s linear;
+          transition: letter-spacing 0.3s linear; }
+          #nav li a:hover {
+            color: #ECE2D9;
+            letter-spacing: 2px;
+            text-shadow: 0 1px #000; } }
+  @media (min-height: 630px) and (min-width: 1000px) {
+    #nav {
+      width: calc(100% - 200px);
+      top: 100px;
+      left: 100px;
+      display: block;
+      z-index: 1; }
+      #nav li {
+        display: inline-block;
+        transition: background-color 0.3s linear; }
+        #nav li:hover {
+          background-color: #256BB5; }
+        #nav li a {
+          padding: 10px 15px;
+          transition: color 0.3s linear;
+          transition: letter-spacing 0.3s linear; }
+          #nav li a:hover {
+            text-shadow: 0 1px #000; } }
+
+#exit {
+  font-size: 1.5em;
+  font-weight: bold;
+  float: right;
+  padding: 5px;
+  margin-right: 10px; }
+  #exit:hover {
+    cursor: pointer; }
+  @media (min-height: 630px) and (min-width: 1000px) {
+    #exit {
+      display: none; } }
 
 .light, .dark {
   transition: background-color 0.3s linear; }
