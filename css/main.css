@@ -47,7 +47,8 @@ section {
     padding: 10px 5%; }
     @media (min-width: 1000px) and (min-height: 630px) {
       section p {
-        font-size: 1.25em; } }
+        font-size: 1.25em;
+        padding: 10px 25px; } }
 
 @media (min-width: 1000px) and (min-height: 630px) {
   #container {

@@ -4,29 +4,25 @@ function init() {
     var toggle = document.getElementById("toggleTheme");
     var darkenElements = document.getElementsByClassName("light");
     var lightenElements = document.getElementsByClassName("dark");
+    var image = toggle.getAttribute("src");
     
-    checkThemeCookie(darkenElements, lightenElements);
+    image = checkThemeCookie(darkenElements, lightenElements, image);
+    toggle.setAttribute("src", image);
     
     toggle.addEventListener("click", function() {
         darkenElements = document.getElementsByClassName("light");
         lightenElements = document.getElementsByClassName("dark");
-        var image = toggle.getAttribute("src");
+        image = toggle.getAttribute("src");
         
         if (darkenElements.length > 0) {
             darkTheme(darkenElements);
             setCookie("theme=dark");
+            toggle.setAttribute("src", changeImage(image, "day"));
         } else if (lightenElements. length > 0) {
             lightTheme(lightenElements);
             setCookie("theme=light");
+            toggle.setAttribute("src", changeImage(image, "night"));
         }
-        
-        if (image.indexOf("night") > -1) {
-            image = image.replace("night", "day");
-        } else if (image.indexOf("day") > -1) {
-            image = image.replace("day", "night");
-        }
-        
-        toggle.setAttribute("src", image);
     });
 }
 
@@ -66,14 +62,28 @@ function setCookie(value) {
     document.cookie = value + ";" + expiration + ";path=/";
 }
 
-function checkThemeCookie(light, dark) {
+function checkThemeCookie(light, dark, source) {
     var themeCookie = document.cookie;
     var isdark = themeCookie.indexOf("theme=dark");
     var islight = themeCookie.indexOf("theme=light");
     
     if (light.length > dark.length && isdark > -1) {
         darkTheme(light);
+        return changeImage(source, "day");
     } else if (dark.length > light.length && islight > -1) {
         lightTheme(dark);
+        return changeImage(source, "night");
+    } else {
+        return source;
     }
+}
+
+function changeImage(source, theme) {
+    if (theme === "day") {
+        source = source.replace("night", theme);
+    } else if (theme === "night") {
+        source = source.replace("day", theme);
+    }
+        
+    return source;
 }
