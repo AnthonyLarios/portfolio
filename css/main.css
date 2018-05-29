@@ -43,12 +43,15 @@ section {
     section {
       height: calc(3 * (100vh - 200px) / 4); } }
   section p {
-    color: #333;
     padding: 10px 5%; }
     @media (min-width: 1000px) and (min-height: 630px) {
       section p {
         font-size: 1.25em;
         padding: 10px 25px; } }
+  section.light p {
+    color: #333; }
+  section.dark p {
+    color: #EEE; }
 
 @media (min-width: 1000px) and (min-height: 630px) {
   #container {

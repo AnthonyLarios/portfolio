@@ -23,9 +23,14 @@ section
         height: calc(3 * (100vh - 200px) / 4)
     
     p
-        color: #333
         padding: 10px 5%
 
         @media (min-width: 1000px) and (min-height: 630px)
             font-size: 1.25em
             padding: 10px 25px
+            
+    &.light p
+        color: #333
+        
+    &.dark p
+        color: #EEE
