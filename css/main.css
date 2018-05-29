@@ -54,9 +54,9 @@ section {
       section p {
         font-size: 1.25em; } }
   section.light p {
-    color: #333; }
+    color: #333333; }
   section.dark p {
-    color: #EEE; }
+    color: #EEEEEE; }
 
 @media (min-width: 1000px) and (min-height: 630px) {
   #container {
