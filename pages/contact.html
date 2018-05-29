@@ -36,11 +36,26 @@
         </header>
         
         <section class="light secondary">
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veritatis, dolores provident. Itaque totam recusandae nemo aut, praesentium nihil. Officia harum ad atque consequuntur tenetur reprehenderit similique quasi, iure sit facere.</p>
-            
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veritatis, dolores provident. Itaque totam recusandae nemo aut, praesentium nihil. Officia harum ad atque consequuntur tenetur reprehenderit similique quasi, iure sit facere.</p>
-            
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veritatis, dolores provident. Itaque totam recusandae nemo aut, praesentium nihil. Officia harum ad atque consequuntur tenetur reprehenderit similique quasi, iure sit facere.</p>
+            <form>
+                <fieldset>
+                    <legend><h2>Contact Information</h2></legend>
+                    <ul>
+                        <li><input id="fname" name="fname" placeholder="First Name" type="text" required></li>
+                        <li><input id="lname" name="lname" placeholder="Last Name" type="text" required></li>
+                        <li><input id="email" name="email" placeholder="Email" type="email" required></li>
+                        <li><input id="number" name="number" placeholder="Phone Number" type="text"></li>
+                    </ul>
+                </fieldset>
+                
+                <fieldset>
+                    <legend><h2>Message</h2></legend>
+                    
+                    <textarea name="message" id="message" cols="30" rows="10"></textarea>
+                </fieldset>
+                
+                <input id="reset" value="reset" class="button" type="reset">
+                <input id="submit" value="submit" class="button" type="submit">
+            </form>
         </section>
     </div>
     
