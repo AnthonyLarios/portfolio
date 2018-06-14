@@ -286,34 +286,32 @@ form .button {
   width: 100%;
   position: absolute;
   top: 50%;
-  left: 100%; }
-  @media (min-height: 630px), (min-width: 1000px) {
-    #nav {
-      transform: translate(0, -50%);
-      display: none; }
-      #nav.show {
-        display: block;
-        visibility: visible;
-        transform: translate(-50%, -50%);
-        left: 50%;
-        z-index: 1; }
-      #nav ul {
-        clear: both;
-        padding-bottom: 40px; }
-      #nav li {
-        transition: background-color 0.3s linear; }
-        #nav li:hover {
-          background-color: #256BB5; }
-        #nav li a {
-          padding: 15.9px 50px;
-          font-size: 1.5em;
-          font-weight: bold;
-          transition: color 0.3s linear;
-          transition: letter-spacing 0.3s linear; }
-          #nav li a:hover {
-            color: #ECE2D9;
-            letter-spacing: 2px;
-            text-shadow: 0 1px #000; } }
+  left: 100%;
+  transform: translate(0, -50%);
+  display: none; }
+  #nav.show {
+    display: block;
+    visibility: visible;
+    transform: translate(-50%, -50%);
+    left: 50%;
+    z-index: 1; }
+  #nav ul {
+    clear: both;
+    padding-bottom: 40px; }
+  #nav li {
+    transition: background-color 0.3s linear; }
+    #nav li:hover {
+      background-color: #256BB5; }
+    #nav li a {
+      padding: 15.9px 50px;
+      font-size: 1.5em;
+      font-weight: bold;
+      transition: color 0.3s linear;
+      transition: letter-spacing 0.3s linear; }
+      #nav li a:hover {
+        color: #ECE2D9;
+        letter-spacing: 2px;
+        text-shadow: 0 1px #000; }
   @media (min-height: 630px) and (min-width: 1000px) {
     #nav {
       width: calc(100% - 200px);
